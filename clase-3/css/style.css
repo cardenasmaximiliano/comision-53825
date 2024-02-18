@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*creo comentarios*/
+/* reset: es una tecnica que me sirve para eliminar todos los estilos que posean los navegadores */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* selectores de etiqueta  general*/
+
+
+html{
+    font-size: 1rem;
+
+}
+
+p{
+    color: red;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+main p{
+ color: rgb(0, 140, 255);
+}
+
+main section p{
+    color: green;
+} 
+
+/*las clases tienen la particularidad
+de poder ser reutilizadas todas la veces 
+que sea necesario
+*/
+
+.cambioParrafo p{
+    color: pink;
+
+}
+
+.cambioParrafo .miColor{
+    color: blueviolet;
+}
+
+#pisarColor{
+    color: rgb(94, 162, 73);
+}
+
+/*
+    que las clases se pueden repetir
+    en el lugar que nosotros necesitemos.
+
+    En cambio los ID, solamente
+    se pueden utilizar 1 sola vez.
+    se recomienda reservarlo para Javascript
+
+*/
+.pruebas{
+    font-size: 20px;
+}
+.pruebas h2{
+    color: grey;
+    background-color: lightblue;
+    text-align:center;
+    text-decoration:overline;
+    text-transform: capitalize;
+    text-shadow: -5px -5px 8px rgb(0, 255, 174) ; 
+
+    /*fuentes*/
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2em;
+    font-weight:900;
+    font-style: italic;
+}
+
+.navbar{
+    list-style:none;
+}
+
+.navbar li a{
+    color: rgb(53, 132, 215);
+    text-decoration: none;
+}
+
+/*medidas*/
+
+/*
+medidas absolutas: son medidas que se expresan 
+en unidad concretas, que no son mutables. 
+
+px : es una medida absoluta que no se modifica
+dependiendo la pantalla. 
+
+
+*/
+
+/*
+medidas relativas: son medidas que se modifican o se 
+adaptan al tamaño de la pantalla donde se abre.
+
+rem em y %
+
+
+rem: es una medida relativa que va a tomar como base
+el tamaño de funte (font-size) de HTML. 
+
+16px --- 1 rem
+
+45px 
+
+16px --- 100%
+10px -- 62.5%
+
+em: 
+
+% 
+
+*/

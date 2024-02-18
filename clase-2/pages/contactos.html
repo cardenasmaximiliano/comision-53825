@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">inicio</a></li>
+                <li><a href="#">contactos</a></li>
+                <li><a href="./tienda.html">tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>contactos</h1>
+        <form action="">
+            <fieldset>
+                <legend>datos personales</legend>
+                <label for="nombre">nombre:</label>
+                <input type="text" id="nombre" required placeholder="ingresa tu nombre" >
+                <label for="mail">mail:</label>
+                <input type="email" id="mail" required placeholder="ingresa tu mail" >
+                <label for="pass">contraseña:</label>
+                <input type="password" id="pass" required placeholder="ingresa tu contraseña">
+                <label for="num">ingresa tu numero:</label>
+                <input type="number" id="num" min="18" max="100">
+                <label for="check">acepta terminos y condiciones:</label>
+                <input type="checkbox" id="check">
+                <label for="talle">elegi el talle</label>
+                <select name="seleccionTalle" id="talle">
+                    <option value="valor1">s</option>
+                    <option value="valor2">m</option>
+                    <option value="valor3">l</option>
+                    <option value="valor4">xl</option>
+                </select>
+                <label for="h">hombre:</label>
+                <input type="radio" id="h" name="sexo" value="hombre" >
+                <label for="m">mujer:</label>
+                <input type="radio" id="m" name="sexo" value="mujer" >
+
+                <input type="submit"> <!--este input es el que envia la informacion al final-->
+                <input type="reset">
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+</html>
