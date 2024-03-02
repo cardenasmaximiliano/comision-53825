@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header h1{
+    background-color: bisque;
+    text-align: center;
+    font-size: 2.1875rem;
+}
+
+
+@media (max-width:1440px){
+
+    header h1{
+        background-color: aquamarine;
+        text-align: right;
+    }
+
+
+
+
+}
+
+@media (max-width: 1024px){
+    header h1{
+        background-color: red;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media (max-width: 768px){
+    header h1{
+        color: white;
+        text-decoration: underline;
+    }
+
+}
+@media (max-width: 425px){
+    header h1{
+        color: white;
+        text-decoration: underline;
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (max-width: 320px){
+    header h1{
+        color: black;
+    }
+} */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(119, 136, 153, 0.181);
+    align-items: center;
+}
+.navBar{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    list-style: none;
+}
+.navBar li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.806);
+}
+
+.sectionFacebook{
+    display: flex;
+    width: 80%;
+    height: 31.25rem;
+    margin: auto;
+    align-items: center;
+}
+
+.sectionFacebook img{
+    width: 50%;
+}
+
+.login{
+    width: 25rem;
+    height:200px;
+   
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.277);
+}
+
+/**grid trabaja con filas y columnas**/
+.galeriaGrid{
+    display: grid;
+    width: 80%;
+    height: 31.25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px repeat(2, auto);
+    grid-template-areas: 
+    "img1 img1 img1"
+    "img4 img2 img5"
+    "img4 img3 img5"
+    ;
+    margin: auto;
+    gap: 10px;
+
+    object-fit: contain;
+}
+.prin1{
+    grid-area: img1;
+}
+.hor1{
+    grid-area: img2;
+}
+.hor2{
+    grid-area: img3;
+}
+.ver1{
+    grid-area: img4;
+}
+.ver2{
+    grid-area: img5;
+}
+
+
+
+.galeriaGrid img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width:1440px){
+
+}
+
+@media (max-width: 1024px){
+    .sectionFacebook img{
+        width: 70%;
+    }
+
+    .login{
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+  header{
+    justify-content: space-around;
+  }
+  .navBar{
+    padding-right: none;
+  }
+  .navBar li a{
+    font-size: 1.5625rem;
+  }
+  .sectionFacebook{
+    flex-direction: column;
+  }
+  .login h1{
+    display: none;
+  }
+
+  .galeriaGrid{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:
+    "img2 img3"
+    "img2 img3"
+    "img4 img5"
+    "img4 img5"
+    ;
+    .prin1{
+        display: none;
+    }
+  }
+}
+@media (max-width: 425px){
+    header{
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    .login{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 320px){
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+    .navBar{
+        width: 70%;
+        flex-wrap: wrap;
+        margin: auto;
+        align-items: center;
+    }
+
+    .prin1{
+        display: block;
+    }
+    .galeriaGrid{
+        height: none;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        ;
+    }
+}

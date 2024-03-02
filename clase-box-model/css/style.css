@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+trabajando con flex
+*/
+
+.header-index{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1.25rem;
+    width: 100%;
+    height: 4.375rem;
+    background-color: #f2f6f907;
+    /*crear una segunda capa y al **/
+    position: sticky;
+    top: 0;
+}
+
+.navBar{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.navBar li a{
+    text-decoration: none;
+    
+    color: black;
+    font-size: 1.875rem;
+}
+
+
+.section-principal{
+    width: 100%;
+    height: 25rem;
+    background-image: url("https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-principal h1{
+    margin-bottom: 2.5rem;
+    font-size: 3.125rem;
+   
+    text-shadow: 2px 2px 2px black;
+}
+
+.section-dos{
+    background-color: #FDBE46;
+}
+h2{
+    text-align: center;
+}
+
+
+.contenedor-cards{
+    display: flex;
+    width: 100%;
+    height: 600px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+
+.card{
+    width: 18.75rem;
+    height: 21.25rem;
+    /* border: 1px solid black; */
+    /* overflow: hidden;*oculta excesos* */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.457);
+}
+
+
+.card .card-img{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.card .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-1{
+    order: 3;
+    /* align-self: flex-start; */
+    background-color: greenyellow;
+}
+
+.card-2{
+    order: 2;
+    /* align-self: flex-end; */
+    background-color: grey;
+}
+.card-3{
+    order: 1;
+    background-color: cadetblue;
+}
+.card-4{
+    order: 4;
+    background-color: pink;
+}
+
+/**
+    footer
+**/
+.logo-w{
+    position: fixed;
+    bottom: 0;
+    right: -10%;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 1.875rem;
+}
+
+footer div{
+    width: 18.75rem;
+}
+
+h4{
+    padding-bottom: .875rem;
+    margin-bottom: .875rem;
+    border-bottom: 4px solid #FDBE46;
+}
+
+/**position**/
+
+/*relative*/
+
+.position{
+    
+    /* position: relative; */
+    /**top right bottom left**/
+    position: relative;
+
+}
+
+/**
+position absolute: al contenedor body
+*/
+.logo{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
