@@ -1,0 +1,150 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:visited{
+    color: violet;
+}
+
+
+/**pseudoclases se declara con :*/
+
+/*hover: lo que nos permite es que cuando pasemos el cursos
+por encima se desplieguen propiedades
+
+
+*/
+/*
+.navbar li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.navbar li a:active{
+    color: green;
+}
+.galeria{
+    margin: 2.5rem;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.entry:hover{
+    opacity: 0.6;
+    
+}
+.galeria img{
+    width: 25%;
+    filter:grayscale(1)
+}
+
+.galeria img:hover{
+    filter: none;
+}
+
+form input{
+    border: none;
+    border-bottom: 1px solid black;
+}
+form input:focus{
+    color: red;
+    outline: none;
+}
+
+form input::placeholder{
+    color: red;
+}
+
+.parrafos p:first-child{
+    color: red;
+}
+
+.parrafos p:last-child{
+    color: blue;
+}
+
+.parrafos p:nth-child(4){
+    color: pink;
+    font-size: 2.5rem;
+    text-decoration: overline;
+}
+
+.not p:not(.pseudo){
+    color: red;
+
+}
+
+button{
+    padding: 8px .375rem;
+    border:none;
+    border-radius: .3125rem;
+}
+button:active{
+    box-shadow: 2px 2px 5px grey
+    ;
+   
+}
+
+input:required{
+    border: 2px solid blue;
+}
+
+/**pseudoelementos*/
+/*
+.pseudoelemento p::before{
+    content: "buenas chicos, ";
+    color: brown;
+    background-color: lightcyan;
+}
+
+.pseudoelemento p:hover::after{
+    content: " estan?";
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+
+h2::first-letter{
+    font-size: 3.125rem;
+    color: lightskyblue;
+}
+
+p::first-line{
+    background-color: lightcoral;
+}
+
+p::selection{
+    color: yellow;
+    background-color: black;
+} */
+
+/**
+BEM = 
+
+bloque= siempre va a hacer referencia a la etiqueta padre
+elemento= que va a ser el hijo directos del bloque.
+modificador= este hace referencia simplemento a lo que se quiere modificar. 
+
+
+
+
+*/
+
+img{
+    width: 18.75rem;
+}
